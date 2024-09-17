@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Or Javascript | DOM</title>
+</head>
+<body style="background-color: #181818; color: white;">
+    <ul class="lenguage">
+        <li>javascript</li>
+        <li></li>
+    </ul>
+    
+</body>
+<script>
+    function Addlenguage(langname) {
+        const li = document.createElement('li')
+        li.innerHTML= `${langname}`
+        document.querySelector('.lenguage').appendChild(li)
+    }
+    Addlenguage("python")
+    Addlenguage("TypeScript")
+    function addoptimway(LenguageName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LenguageName))
+        document.querySelector('.lenguage').appendChild(li)
+    }
+    addoptimway('ruby')
+    addoptimway('Go')
+
+    // Edit
+    const secondLan = document.querySelector('li:nth-child(2)')
+    // console.log(secondLan)
+    // secondLan.innerHTML = 'Mojo'
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+    secondLan.replaceWith(newli)
+
+    // edit 2 way
+    const firstlen = document.querySelector("li:first-child")
+    firstlen.outerHTML = '<li>typescript <li>'
+    
+    // remove
+    const removefirst = document.querySelector('li:first-child')
+    removefirst.remove()
+    
+</script>
+</html>
