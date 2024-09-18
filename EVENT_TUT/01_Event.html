@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai OR Javscript HTML event</title>
+</head>
+<body>
+    <h2 id="heading">this is the heading befor clicked</h2>
+    <button id = "bbttn">Click Me </button>
+    <div>
+    <ul id="images">
+        <li ><img width="200px" id="1img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBb0uqPOzUaEdSeQYrzoGc5-UoUOjrKczVZg&s" alt="1birds" ></li>
+        <li><img width="200px" id="2img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRKuTA5zrJ0v0PManVvxJK15n8IYwvBORdA&s" alt="2birds"></li>
+
+        <li><img width="200px" id="co_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRKuTA5zrJ0v0PManVvxJK15n8IYwvBORdA&s" alt="3birds"></li>
+
+        <li><img width="200px" id="code_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRKuTA5zrJ0v0PManVvxJK15n8IYwvBORdA&s" alt="4birds"></li>
+
+        <li><img width="200px" id="5img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRKuTA5zrJ0v0PManVvxJK15n8IYwvBORdA&s" alt="5birds"></li>
+        <li><a style="background-color: black; color: aliceblue;" href="https://Google.com" id="Google">Google</a>
+    </div>
+    
+</body>
+
+<script>
+    // document.getElementById('images').onclick = function(){
+    //     alert("this is img one")
+    // }
+    // document.getElementById('code_img').onclick = function(){
+    //     alert('code_img')
+    // }
+
+    // attechEvent -- we enter less 
+    // jQuery Also
+    // document.getElementById('code_img').addEventListener('click',function(e){
+    //     console.log(e)
+    //     })
+
+    const myHeading = document.getElementById('heading')
+
+    const myButton = document.getElementById('bbttn')
+
+    myButton.addEventListener('click', function(){
+        // The **textContent** property sets or returns the text content of the specified node, and all its descendants.
+ 
+        myHeading.textContent = "After click button"
+        
+    })
+    
+</script>
+</html>
