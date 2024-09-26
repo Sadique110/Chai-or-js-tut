@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Manuplation</title>
+    <style>
+        .bg-black{
+            background-color: #0cd8d8;
+            color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="bg-black">HTML DOM Learnig ></h1>
+        <p id="title" class="bg-black">Hello world learning the DOM manuplations <span style="display: none;">test text</span</p>
+        <h2 id="tttt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nihil!</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nihil!</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nihil!</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nihil!</h2>
+
+    </div>
+    <div>
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    const element =  document.getElementById('title')
+    document.getElementById('tttt').innerHTML = "Geeks for Geeks introducation is " + element.innerHTML;
+
+   
+</script>
+</html> 
