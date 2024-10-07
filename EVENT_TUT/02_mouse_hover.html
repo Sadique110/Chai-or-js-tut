@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mousehover">Mouse me!</h1>
+    <button id = 'click'>STOP</button>
+
+    <script>
+        const headingHere = document.getElementById('click')
+    
+        // Mouseover event: when the mouse hovers over the heading
+
+        headingHere.addEventListener('mouseup',function () {
+            headingHere.textContent = "Mouse Hovered on me !"
+        })
+
+        // Mouseout event: when the mouse leaves the heading area
+
+        headingHere.addEventListener('mouseout',function () {
+            headingHere.textContent = "Hover me!"
+        })
+    </script>
+</body>
+</html>
