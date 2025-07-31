@@ -6,7 +6,7 @@ let score = "33abc"
 // let score = true // one for false = 0
 
 // let score = undefined // NaN
-console.log(typeof (score)); 
+// console.log(typeof (score)); 
 // console.log(typeof score)
 
 // let NumberInValue = Number(score);
@@ -45,16 +45,27 @@ let negvalue = -value
 
 // console.log("1" + 1)
 // console.log(1 + "2")
-console.log("1" + 2 +2);
-console.log("1" + 3+3 );
-console.log( 1 + 2 + "3");
+// console.log("1" + 2 +2);
+// console.log("1" + 3+3 );
+// console.log( 1 + 2 + "3");
 
 // console.log(+true)
 
 
 // let num1, num2, num3
 // num1 = num2 = num3 = 2+2;
+ 
+let gameCounter = 100;
+gameCounter++;
+// console.log(gameCounter)
 
-let gemcounter = 100;
-gemcounter++;
-console.log(gemcounter)
+
+// =========== MDN prefix and suffix doc and exc====
+ 
+let x = 3;
+let y = x++;
+console.log(`x: ${x}, y: ${y}`); // x: 4, y: 3
+
+let a = 3;
+let b = ++a;
+console.log(`a: ${a}, b: ${b}`); // a: 4, b: 4
