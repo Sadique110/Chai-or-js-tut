@@ -33,16 +33,28 @@
 
 
 
-const userloggedIn = true
-const debitCard = true
-const googlelogIn = false
-const EmaillogIn = true
+// const userloggedIn = true
+// const debitCard = true
+// const googlelogIn = false
+// const EmaillogIn = true
 
-if (userloggedIn && debitCard && 2==3 ) {
-    console.log("User can perches the course");
+// if (userloggedIn && debitCard && 2==3 ) {
+//     console.log("User can perches the course");
+// }
+
+
+// if (googlelogIn || EmaillogIn) {
+//     console.log("User logged In");
+// }
+
+
+
+
+function Calsum(hight, width){
+    if (hight >0 && width > 0){
+        return ` the sum  hight * width = ${hight * width}`
 }
+    return "invalid input"}
 
-
-if (googlelogIn || EmaillogIn) {
-    console.log("User logged In");
-}
+a = Calsum(2,3)
+console.log(a);
