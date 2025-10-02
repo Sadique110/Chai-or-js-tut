@@ -1,3 +1,7 @@
+// Variables are used to store data values. In JavaScript, we use var, let, and const to declare variables.
+
+
+
 // variabel in java script
 const accountId = 1234
 let name = "mohammad sadique"
@@ -9,14 +13,13 @@ account_type = "SBI"
 name ="sadique"
 city ="pune"
 account_type = "maharashtra"
-let accountState;
+let accountState= 123;
 
-console.log(accountId);
+// console.log(accountId);
 
 /*
 prefer not to use var
-be
-couse of problem function scop and block scop
+becouse of problem function scop and block scop
 */
 
 console.table([name, city, account_type, accountState]);
