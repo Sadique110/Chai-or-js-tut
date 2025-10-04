@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM  Manuplation</title>
+        <style>
+        .bg-black{
+            /* background-color: #0cd8d8; */
+            color: blueviolet;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="parent bg-black">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thusday</div>
+            <div class="day">Firday</div>
+            <div class="day">Saturday</div>
+            <div class="day">Sunday</div>
+        </div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent.children);
+    // console.log(parent.children[0]);
+    // console.log(parent.children[0].innerText);
+    // console.log(parent.firstElementChild.innerText);
+    // console.log(parent.lastElementChild.innerText);
+    // console.log(parent.childElementCount);
+
+    // for(let i=0; i<parent.childElementCount; i++){
+    //     console.log(parent.children[i].innerText);
+    // }
+
+
+    // Array.from(parent.children).forEach(element => {
+    //     console.log(element.innerText);
+    // });
+    parent.children[0].style.color = "red"
+    // console.log(parent.children[0].innerText);
+    console.log("NODE: ",parent.childNodes);
+
+
+    const getday = document.querySelector('.day')
+    // console.log(getday);
+    // console.log(getday.parentElement);
+    // console.log(getday.nextElementSibling);
+</script>
+</html>
