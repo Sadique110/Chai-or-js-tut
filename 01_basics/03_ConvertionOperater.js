@@ -1,12 +1,22 @@
+/*
+convertions operater
+convertions operater are used to convert a value from one type to another type. 
+1. Number()
+2. String()
+3. Boolean()
+4. + (unary plus) 
+
+*/
+
 // let score = "33abc"     //NaN means Not A Number
 // let score = "33"    // string
-let score = "33abc"
+// let score = "33abc"
 // let score = 33
 // let score = null  // zero
 // let score = true // one for false = 0
 
 // let score = undefined // NaN
-// console.log(typeof (score)); 
+// console.log( score); 
 // console.log(typeof score)
 
 // let NumberInValue = Number(score);
